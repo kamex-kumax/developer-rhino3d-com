@@ -1,6 +1,6 @@
 ---
 title: Migrate your plugin project to Rhino 6
-description: This guide walks you through migrating your Rhino 5 plugin project to Rhino 6.
+description: This guide walks you through using migrator.exe.
 authors: ['Dale Fugier']
 author_contacts: ['dale']
 sdk: ['C/C++']
@@ -13,21 +13,21 @@ keywords: ['c', 'C/C++', 'plugin']
 layout: toc-guide-page
 ---
 
- 
-It is presumed you already have the necessary tools installed and are ready to go.  If you are not there yet, see [Installing Tools (Windows)]({{ site.baseurl }}/guides/cpp/installing-tools-windows).
+## Prerequisites
+
+It is presumed you already have the necessary tools installed and are ready to go.  If you are not there yet, see [Installing Tools (Windows)]({{ site.baseurl }}/guides/cpp/installing-tools-windows)
 
 ## Run the Migration Application
 
 1. Download [cpp-migrator.zip](http://www.rhino3d.com/download/rhino/6.0/v6-cpp-migrator)
-1. Unpack the plugin
-1. Make a backup of your plug-in project and all source code. This tool modifies your source in place.
-1. From the Windows command prompt, run `migrator.exe [plugin_directory]`
-where [plugin_directory] is the full path to the folder where your plug-in source lives.
+2. Unzip the downloaded file into it's own folder.
+3. Backup your plug-in project and source code. This tool modifies your source in place.
+4. Open a Windows command prompt and navigate to the folder where you unzipped the utility.
+5. Run `migrator.exe [plugin_directory]`, where `[plugin_directory]` is the full path to the plug-in source folder.
 
 Your plugin project should now be ready to build with the Rhino 6 C/C++ SDK.
 
 ## Related Topics
 
-- [What is a Rhino Plugin?]({{ site.baseurl }}/guides/general/what-is-a-rhino-plugin)
-- [Installing Tools (Windows)]({{ site.baseurl }}/guides/cpp/installing-tools-windows)
+- [What's New?]({{ site.baseurl }}/guides/general/whats-new)
 - [Migrate your plugin project to Rhino 6 manually]({{ site.baseurl }}/guides/cpp/migrate-your-plugin-manual-windows)

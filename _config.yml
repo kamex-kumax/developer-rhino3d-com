@@ -27,8 +27,9 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
       disable: true
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 #port: 4444
 
@@ -60,5 +61,10 @@ collections:
 
 exclude: [/script, /test, README.md, CONTRIBUTING.md, Gemfile]
 
-version_branches:
-  - wip
+# version branches
+versions:
+  stable: "6"
+  branches:
+    - master # => wip
+    - "5"
+    - "6"
